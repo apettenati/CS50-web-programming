@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<style>
+			html {
+				font-family: arial, sans-serif;
+			}
+			h2 {
+				color: #d93025;
+				font-size: 20px;
+				margin: 25px 30px 25px 10px;
+			}
+			#separator {
+				border-bottom: 1px solid #ebebeb;
+			}
+			.button {
+				background-color: #4d90fe;
+				color: white;
+				border-radius: 2px;
+				padding: 5px 5px;
+				margin: 10px 10px 10px 500px;
+				border-radius: 2px;
+				cursor: default;
+				font-size: 11px;
+				font-weight: bold;
+				text-align: center;
+				white-space: nowrap;
+                text-decoration: none
+			}
+			td {
+				font-family: arial, sans-serif;
+				color: #222
+			}
+			input[type=text] {
+				font-family: arial, sans-serif;
+				width: 400px;
+				height: 20px;
+				padding: 5px 5px;
+				margin: 5px 5px;
+				border-radius: 4px;
+			}
+			a {
+				float: right;
+				color: gray;
+				font-size:12px;
+				padding: 10px;
+			}
+			img {
+				height: 100px;
+				width: 300px;
+				margin: 0px 0px 0px -50px;
+			}
+		</style>
+		<title>Advanced Search</title>
+    </head>
+    <body>
+		<img src="google.jpg" alt="Google">
+		<a href='google-search.html'>Google Search</a>
+		<h2> Advanced Search </h2>
+		<div id="separator"></div>
+		<div>
+			<form action="https://www.google.com/search">
+				<table>
+					<thead>
+						<h3>
+						Find pages with...
+						</h3>
+					</thead>
+					<tbody>
+						<tr>
+							<td> all these words:
+							</td>
+							<td>
+							<input type="text" name="as_q">
+							</td>
+						</tr>
+						<tr>
+							<td> this exact word or phrase:
+							</td>
+							<td>
+							<input type="text" name="as_epq">
+							</td>
+						</tr>
+						<tr>
+							<td> any of these words:
+							</td>
+							<td>
+							<input type="text" name="as_oq">
+							</td>
+						</tr>
+						<tr>
+							<td> none of these words:
+							</td>
+							<td>
+							<input type="text" name="as_eq">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<input class="button" type="submit" value="Advanced Search">
+			</form>
+		</div>
+    </body>
+</html>
