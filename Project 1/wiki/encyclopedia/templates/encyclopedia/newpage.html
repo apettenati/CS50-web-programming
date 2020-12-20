@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+
+    {% if error %}
+        <p> This page already exists. Please try again. </p>
+    {% endif %}
+
+    <h1>New Page</h1>
+    <br>
+    <form>
+        {{ page_form }}
+        <input type="submit" value="Submit New Page">
+    </form>
+
+{% endblock %}
